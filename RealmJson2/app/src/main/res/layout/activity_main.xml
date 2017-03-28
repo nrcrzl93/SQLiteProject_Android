@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hong.realmjson2.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동등한 INSERT문"
+                style="@android:style/Widget.Button"
+                android:id="@+id/btnInsert"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.TextView"
+                android:text="동등한 INSERT문 결과"
+                android:textSize="20dp"
+                android:id="@+id/tvInsert"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSelect"
+                android:text="SELECT문 실행"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.TextView"
+                android:text="SELECT문 소요시간"
+                android:textSize="20dp"
+                android:id="@+id/tvSelect"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.TextView"
+                android:text="SELECT문 결과"
+                android:id="@+id/tvSelectView"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnWhere"
+                android:text="SELECT WHERE절 실행"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.TextView"
+                android:text="SELECT WHERE절 소요시간"
+                android:textSize="20dp"
+                android:id="@+id/tvWhere"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.TextView"
+                android:text="SELECT WHERE절 결과"
+                android:id="@+id/tvWhereView"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DB초기화"
+                style="@android:style/Widget.Button"
+                android:id="@+id/btnInit"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
